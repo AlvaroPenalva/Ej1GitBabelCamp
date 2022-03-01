@@ -1,7 +1,11 @@
 package ej1Git;
 public class Suma {
-	public static int acumulado;
+	private static int acumulado = 0;
 	public static int sumaAyB(int a, int b) {
 		return a + b;
+	}
+	public static int sumaAcumulada(int num) {
+		acumulado += num;
+		return acumulado;
 	}
 }
