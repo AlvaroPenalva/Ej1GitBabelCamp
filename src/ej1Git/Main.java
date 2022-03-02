@@ -33,6 +33,9 @@ public class Main {
 			sol = Resta.restaAcumulada(num);
 		}while(num != 0);
 		System.out.println("El numero acumulado es: " + sol);
+		
+		//Aun no se ha aniadido el codigo de comprobacion de multiplicacion
+		System.out.println("Futura implementacion multiplicacion");
 	}
 
 	//esta rama incluira solo este comentario en el main y la clase multiplicacion para verificar que es la fusion de avance rapido
