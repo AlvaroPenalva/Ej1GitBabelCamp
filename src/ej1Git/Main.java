@@ -35,5 +35,5 @@ public class Main {
 		System.out.println("El numero acumulado es: " + sol);
 	}
 
-	
+	//esta rama incluira solo este comentario en el main y la clase multiplicacion para verificar que es la fusion de avance rapido
 }
