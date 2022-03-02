@@ -33,6 +33,19 @@ public class Main {
 			sol = Resta.restaAcumulada(num);
 		}while(num != 0);
 		System.out.println("El numero acumulado es: " + sol);
+		
+		//Codigo para probar multiplicacion
+		System.out.println("Escriba dos numeros para multiplicar y pulse enter: ");
+		a = sc.nextInt();
+		b = sc.nextInt();
+		sol = Multiplicacion.multiplicaAyB(a, b);
+		System.out.println("Resultado: " + sol);
+		System.out.println("Inserte numeros para acumular, el 0 detiene la multiplicacion:");
+		do {
+			num = sc.nextInt();
+			sol = Multiplicacion.multiplicacionAcumulada(num);
+		}while(num != 0);
+		System.out.println("El numero acumulado es: " + sol);
 	}
 
 	//esta rama incluira solo este comentario en el main y la clase multiplicacion para verificar que es la fusion de avance rapido
