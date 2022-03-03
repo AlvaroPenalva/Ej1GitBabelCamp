@@ -42,7 +42,7 @@ public class Main {
 		System.out.println("Resultado: " + sol);
 		System.out.println("Inserte numeros para acumular, el 0 detiene la multiplicacion:");
 		num = sc.nextInt();
-		while(num != 0){
+		while(num != 0){			
 			sol = Multiplicacion.multiplicacionAcumulada(num);
 			num = sc.nextInt();
 		}
