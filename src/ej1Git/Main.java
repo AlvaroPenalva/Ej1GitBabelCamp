@@ -41,10 +41,11 @@ public class Main {
 		sol = Multiplicacion.multiplicaAyB(a, b);
 		System.out.println("Resultado: " + sol);
 		System.out.println("Inserte numeros para acumular, el 0 detiene la multiplicacion:");
-		do {
-			num = sc.nextInt();
+		num = sc.nextInt();
+		while(num != 0){			
 			sol = Multiplicacion.multiplicacionAcumulada(num);
-		}while(num != 0);
+			num = sc.nextInt();
+		}
 		System.out.println("El numero acumulado es: " + sol);
 	}
 
