@@ -1,0 +1,36 @@
+body{
+    background-image: url(https://9to5fortnite.com/wp-content/uploads/2021/08/Elden-Ring-Harry-Potter.jpg);
+    background-size: cover;
+    color: goldenrod;
+    background-attachment: scroll;
+}
+
+header{
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 8%;
+}
+
+/* He tenido que usar float left porque no consegui usar un span ya que el margen derecho de la lista
+ocupaba todo el ancho restante de pantalla y no encuentro manera de arreglarlo :( */
+ul{
+    font-size: x-large;
+    float: left;
+}
+#siegward{
+    margin-left: 5em;
+    max-width: fit-content;
+}
+table{
+    border: solid gold;
+    float: right;
+    margin-right: 2em;
+}
+#presentacion{
+    max-width:  50%;
+    font-size: larger;
+    background-color: rgb(75, 64, 64);
+}
+.enlaces{
+    margin-top: 20em;
+}
