@@ -1,18 +1,38 @@
 body{
-    background-image: url(https://9to5fortnite.com/wp-content/uploads/2021/08/Elden-Ring-Harry-Potter.jpg);
-    background-size: cover;
-    color: goldenrod;
+    background-image: url(https://i2.wp.com/www.gameoverla.com/wp-content/uploads/2019/06/Elden-Ring.jpg?fit=1920%2C1080&ssl=1);
+    background-repeat: no-repeat;
+    color: whitesmoke;
     background-attachment: scroll;
+    margin: 0;
 }
 
 header{
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-bottom: 8%;
+    position: fixed;
+    border: solid rgb(179, 137, 32);
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(179, 137, 32);
+    z-index: 1;
+}
+
+#Titulo{
+    display: inline-block;
+}
+
+#login{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+main{
+    position: relative;
+    top: 150px;
+    margin-left: 10%;
 }
 
 /* He tenido que usar float left porque no consegui usar un span ya que el margen derecho de la lista
-ocupaba todo el ancho restante de pantalla y no encuentro manera de arreglarlo :( */
+ocupaba todo el ancho restante de pantalla y no encuentro manera de arreglarlo */
 ul{
     font-size: x-large;
     float: left;
@@ -25,12 +45,18 @@ table{
     border: solid gold;
     float: right;
     margin-right: 2em;
+    background-color: black;
+}
+th, td{
+    border: solid gold;
 }
 #presentacion{
     max-width:  50%;
     font-size: larger;
-    background-color: rgb(75, 64, 64);
+    border-radius: 10px;
 }
-.enlaces{
-    margin-top: 20em;
+footer{
+    margin-top: 20%;
+    padding: 1em;
+    background-color: rgb(179, 137, 32);
 }

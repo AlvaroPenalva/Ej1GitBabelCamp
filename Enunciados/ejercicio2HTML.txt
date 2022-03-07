@@ -5,3 +5,7 @@ Hacer una web con HTML que incluya la mayoria de los componente HTML vistos
 (comercio electronico, ocio, deporte, etc.
 
 La web debe de tener al menos 2 páginas.
+
+## Segunda parte con CSS
+
+Meter en las paginas web la mayoria del CSS visto hasta
