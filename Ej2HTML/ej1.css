@@ -2,7 +2,6 @@ body{
     background-image: url(https://i2.wp.com/www.gameoverla.com/wp-content/uploads/2019/06/Elden-Ring.jpg?fit=1920%2C1080&ssl=1);
     background-repeat: no-repeat;
     color: whitesmoke;
-    background-attachment: scroll;
     margin: 0;
 }
 
@@ -17,12 +16,12 @@ header{
 
 #Titulo{
     display: inline-block;
+    padding: 0.6em;
 }
 
 #login{
     float: right;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 28px;
 }
 
 main{
@@ -35,7 +34,9 @@ main{
 ocupaba todo el ancho restante de pantalla y no encuentro manera de arreglarlo */
 ul{
     font-size: x-large;
-    float: left;
+    display: inline-block;
+    list-style-type: decimal;
+    list-style-position: inside;
 }
 #siegward{
     margin-left: 5em;
