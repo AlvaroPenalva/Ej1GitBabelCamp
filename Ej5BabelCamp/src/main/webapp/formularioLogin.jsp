@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>{</title>
+<title>Loggeado</title>
 </head>
 <body>
+
+	<h1> Bienvenido ${nombre}</h1>
 
 </body>
 </html>
