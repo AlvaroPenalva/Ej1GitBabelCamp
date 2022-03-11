@@ -4,4 +4,5 @@ Hacer el CV en HTML y CSS aplicando lo visto en clase y subirlo al repositorio g
 
 Ir empezando con la parte de HTML.
 
-Ver los 6 primeros ejemplos de CSS para tomar contacto y repasar.
+#Una vez acabado CSS
+Meter en el CV propiedades CSS vistas en clase. Meter diseño responsive para que se visualice en moviles

@@ -1,0 +1,72 @@
+body{
+    background-image: url(https://i2.wp.com/www.gameoverla.com/wp-content/uploads/2019/06/Elden-Ring.jpg?fit=1920%2C1080&ssl=1);
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    border: solid rgb(179, 137, 32);
+    border-radius: 10px;
+    width: 100%;
+    z-index: 1;
+    background: radial-gradient(gold, rgb(179, 137, 32));
+}
+
+#Titulo{
+    display: inline-block;
+    padding: 0.6em;
+}
+
+#login{
+    float: right;
+    margin-top: 28px;
+}
+
+main{
+    position: relative;
+    top: 150px;
+    margin-left: 10%;
+}
+
+/* He tenido que usar float left porque no consegui usar un span ya que el margen derecho de la lista
+ocupaba todo el ancho restante de pantalla y no encuentro manera de arreglarlo */
+ul{
+    font-size: x-large;
+    display: inline-block;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+#siegward{
+    margin-left: 5em;
+    max-width: fit-content;
+}
+table{
+    border: solid gold;
+    float: right;
+    margin-right: 2em;
+    background-color: black;
+}
+th, td{
+    border: solid gold;
+}
+#presentacion{
+    max-width:  50%;
+    font-size: larger;
+    border-radius: 10px;
+}
+footer{
+    margin-top: 20%;
+    padding: 1em;
+    background-color: rgb(179, 137, 32);
+}
+a:link{
+    color:white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color:black;
+}

@@ -1,3 +1,14 @@
+
+@media screen  and (max-width:700px) and (min-width:500){
+    main{
+        display: flex;
+        flex-direction: column !important;
+    }
+    header{
+        flex-direction: column;
+        min-width: none;
+    }
+}
 body{
     background: radial-gradient(rgb(44, 44, 44), rgb(0, 0, 0));
     color:rgb(174, 182, 182);
@@ -14,6 +25,7 @@ header{
     background:radial-gradient(rgb(75, 17, 17), rgb(150,34,34));
     border:solid 2px;
     border-radius: 10px;
+    min-width: 1100px;
     display: flex;
     flex-direction: row;
 }
@@ -24,7 +36,7 @@ h1{
 }
 #contacto{
     min-width: fit-content;
-    margin-left: 30%;
+    margin-left: 30em;
     line-height: 1.3em;
 }
 main{
@@ -33,20 +45,17 @@ main{
     flex-direction: row;
 }
 #general{
-    width:65%;
+    width:80%;
     padding-left: 2em;
     padding-right: 20%;
 }
 #aficiones{
-    width:35%;
+    width:20%;
     background-color: gray;
     border-radius: 10px;
     border: solid 3px rgb(88, 88, 88);
     color: aliceblue;
     line-height: 3em;
-}
-#aficiones > h3{
-    text-align: center;
 }
 section{
     margin-bottom: 5em;
