@@ -1,10 +1,12 @@
-class Equipo {
+export class Equipo {
     constructor(id, nombre, fechafund, jugadores) {
         this._id = id;
         this._nombre = nombre;
         this._fechafund = fechafund;
         if (jugadores != undefined)
-            this.jugadores = jugadores;
+            this._jugadores = jugadores;
+        else
+            this._jugadores = new Array();
     }
     get id() {
         return this._id;
@@ -25,11 +27,13 @@ class Equipo {
         this._fechafund = value;
     }
     insertarJugador(jug) {
-        this.jugadores.push(jug);
+        this._jugadores.push(jug);
     }
     quitarJugador(jug) {
-        let i = this.jugadores.indexOf(jug);
-        this.jugadores.slice;
+        let i = this._jugadores.indexOf(jug);
+        this._jugadores.slice;
+    }
+    get jugadores() {
+        return this._jugadores;
     }
 }
-export { Equipo };

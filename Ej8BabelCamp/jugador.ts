@@ -1,4 +1,4 @@
-import { Historial } from "./historial";
+import { Historial } from "./historial.js";
 
 export class Jugador{
     

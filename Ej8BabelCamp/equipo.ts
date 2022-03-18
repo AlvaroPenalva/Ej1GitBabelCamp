@@ -1,16 +1,17 @@
-import { Jugador } from "./jugador";
+import { Jugador } from "./jugador.js";
 
-class Equipo{
+export class Equipo{
     private _id: number;
     private _nombre: string;
     private _fechafund: Date;
-    private jugadores: Array<Jugador>;
+    private _jugadores: Array<Jugador>;
 
     constructor(id:number, nombre: string, fechafund: Date, jugadores?: Array<Jugador>){
         this._id = id;
         this._nombre = nombre;
         this._fechafund = fechafund;
-        if(jugadores != undefined) this.jugadores = jugadores;
+        if(jugadores != undefined) this._jugadores = jugadores;
+        else this._jugadores = new Array<Jugador>();
     }
 
     public get id(): number {
@@ -35,13 +36,15 @@ class Equipo{
     }
 
     public insertarJugador(jug:Jugador) {
-        this.jugadores.push(jug);
+        this._jugadores.push(jug);
     }
 
     public quitarJugador(jug: Jugador){
-        let i: number = this.jugadores.indexOf(jug);
-        this.jugadores.slice
+        let i: number = this._jugadores.indexOf(jug);
+        this._jugadores.slice;
+    }
+
+    public get jugadores(){
+        return this._jugadores;
     }
 }
-
-export{Equipo}

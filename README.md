@@ -3,45 +3,45 @@
 ## Aquí se encuentra toda la estructura de carpetas explicada
 
 
-##### Ejercicio1BabelCamp:
+### Ejercicio1BabelCamp:
   -En este ejercicio he practicado todo lo explicado en el enunciado para la práctica de commits y todo el asunto de repositorios git.
 
 
-##### Ejercicio2BabelCamp:
+### Ejercicio2BabelCamp:
   -Este es el primer ejercicio correspondiente a HTML donde he creado una especie de web-foro con dos páginas, una de presentación y otra de login
   realmente la página de login al introducir los datos e intentar acceder se redirige a la página de inicio. Contiene un css común para los dos html ej2.css
   y otro particular para cada uno.
 
 
-##### Ejercicio3BabelCamp:
+### Ejercicio3BabelCamp:
   -Este ejercicio corresponde al currículum vitae. En este ejercicio es donde se ha llevado a cabo el diseño responsive para móviles y tabletas.
 
 
-##### Ejercicio4BabelCamp:
+### Ejercicio4BabelCamp:
   -Este ejercicio 4 corresponde a la primera toma de contacto con una aplicación java. Contiene los enlaces a la 1 y la 2.
 
 
-##### Ejercicio5BabelCamp:
+### Ejercicio5BabelCamp:
   -Este ejercicio consiste en el desarrollo de una página de login en java con su servlet y con dos enlaces a los ejercicios 2 y 3. el index existente
   corresponde al ejercicio2 los archivos html y css correspondientes a este ejercicio son: login.css, login.html, error.html, formularioLogin.jsp.
 
 
-##### Ejercicio6BabelCamp:
+### Ejercicio6BabelCamp:
   -Este ejercicio corresponde a la creación de dos webs en javascript. Una de manejo de Arrays para insertar y obtener un elemento aleatorio.
   La otra para simular una calculadora, esta incluye un css para que se vean mejor los botones de la calculadora.
 
-##### Ejercicio7BabelCamp:
+### Ejercicio7BabelCamp:
   -Este ejercicio consiste en un conujunto de funciones que se nos pidió para practuicar typescript, no tiene apartado gráfico y se ejecua con node.
   Contiene unos valores predeterminados para probarla.
 
-##### Ejercicio8BabelCamp:
+### Ejercicio8BabelCamp:
   -Este ejercicio contiene las clases para formar un equipo de fútbol en typescript tiene un html para observarlo, por finalizar todavía...
 
-##### Ejercicio9BabelCamp:
+### Ejercicio9BabelCamp:
 
 
-##### Ejercicio10BabelCamp:
+### Ejercicio10BabelCamp:
 
 
-##### Enunciados:
+### Enunciados:
 Aquí se encuentran todos los enunciados de los ejercicios mandados.
