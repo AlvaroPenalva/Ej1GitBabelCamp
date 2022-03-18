@@ -1,0 +1,67 @@
+body{
+    background: radial-gradient(rgb(44, 44, 44), rgb(0, 0, 0));
+    color:rgb(174, 182, 182);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+div.header{
+    max-width: fit-content;
+    margin-left: 2em;
+    padding: auto;
+    margin-top: 1em;
+    text-align: center;
+}
+header{
+    background:radial-gradient(rgb(75, 17, 17), rgb(150,34,34));
+    border:solid 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+#contacto{
+    min-width: fit-content;
+    margin-left: 30%;
+    line-height: 1.3em;
+}
+main{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+}
+#general{
+    width:65%;
+    padding-left: 2em;
+    padding-right: 20%;
+}
+#aficiones{
+    width:35%;
+    background-color: gray;
+    border-radius: 10px;
+    border: solid 3px rgb(88, 88, 88);
+    color: aliceblue;
+    line-height: 3em;
+}
+#aficiones > h3{
+    text-align: center;
+}
+section{
+    margin-bottom: 5em;
+}
+
+#FotoPerfil{
+    margin-left: 1em;
+    margin-top: 1.2em;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: black;
+}
