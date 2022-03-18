@@ -22,10 +22,6 @@ equipo.insertarJugador(jugador);
 historial = new Historial(5, 6, 15, 5);
 jugador = new Jugador(0, "Sergio Ramos", 33, "España", historial);
 equipo.insertarJugador(jugador);
-let leerJugador = function (id) {
-    console.log(equipo.jugadores[id]);
-    console.log(equipo.jugadores[id].historial);
-};
 console.log(equipo);
-//Aqui solo hay que cambiar el id para leer la informacion de algun jugador.
-leerJugador(3);
+//Aqui solo hay que cambiar el numero para leer la informacion de algun jugador. Van del 0 al 5.
+console.log(equipo.jugadores[0]);

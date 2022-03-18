@@ -35,7 +35,7 @@
   Contiene unos valores predeterminados para probarla.
 
 ### Ejercicio8BabelCamp:
-  -Este ejercicio contiene las clases para formar un equipo de fútbol en typescript tiene un html para observarlo, por finalizar todavía...
+  -Este ejercicio contiene las clases para formar un equipo de fútbol en typescript. Sólo hay que ejecutar node script.js y ya funcionaría. El fichero package.json es para el funcionamiento de los módulos, el uso de imports y exports. No he hecho apartado gráfico pero al ejecutarlo se mostrará por consola un equipo completo y posteriormente un jugador de ellos con su historial. este jugador que se muestra se puede cambiar por otro de los 6 modificando la última linea del fichero script.ts.
 
 ### Ejercicio9BabelCamp:
 
