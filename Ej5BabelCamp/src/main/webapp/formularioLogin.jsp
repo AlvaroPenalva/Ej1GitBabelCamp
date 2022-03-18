@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Loggeado</title>
+<link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 

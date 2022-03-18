@@ -1,0 +1,29 @@
+body{
+    background-image: url(https://i2.wp.com/www.gameoverla.com/wp-content/uploads/2019/06/Elden-Ring.jpg?fit=1920%2C1080&ssl=1);
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    border: solid rgb(179, 137, 32);
+    border-radius: 10px;
+    width: 100%;
+    z-index: 1;
+    background: radial-gradient(gold, rgb(179, 137, 32));
+}
+
+#Titulo{
+    display: inline-block;
+    padding: 0.6em;
+}
+a:link{
+    color:white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color:black;
+}

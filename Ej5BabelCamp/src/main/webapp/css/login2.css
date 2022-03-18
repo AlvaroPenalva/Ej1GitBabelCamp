@@ -1,0 +1,11 @@
+main{
+    position: relative;
+    top: 300px;
+    left: 30%;
+}
+.inputForm{
+    border: solid rgb(179, 137, 32);
+    border-radius: 10px;
+    background: radial-gradient(gold, rgb(179, 137, 32));
+    max-width: fit-content;
+}
