@@ -1,8 +1,5 @@
-TAREAS PARA MAÑANA
-
-1) Ver los ejemplos de TS que quedan de mi WsAngular. Se agradece feedback para mejoras :)
-
-2) Ejercicio8 Crear un sistema de clases que codifique un modelo de un equipo de futbol con sus jugadores
+Ejercicio8 
+Crear un sistema de clases que codifique un modelo de un equipo de futbol con sus jugadores
 y el historia.
 
 1.	La clase Jugador tiene un id, nombre, una edad y un país de procedencia
@@ -17,9 +14,4 @@ Se tendrán en cuenta las siguientes relaciones entre las clases
 
 Se pide hacer el modelo de clases y crear los objetos necesarios para hacer un equipo. 
 (no hace falta hacer los 11 jugadores con sus 11 historiales...)
-
-3) Ejercicio9 Hacer una aplicación angular que muestre el CV que habéis hecho en actividades anteriores.
-En este caso, la información más relevante del CV se tiene que poner como atributos
-en el componente y mandar la información a la página web, no se deben de poner en la página html
-directamente.
 
