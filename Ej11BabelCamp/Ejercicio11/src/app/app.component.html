@@ -1,1 +1,29 @@
-<form action=""></form>
+<h1>Videojuegos</h1>
+
+<div id="entrada">
+
+  <div id="inputs">
+    <label for="titulo">Titulo: <input type="text" [(ngModel)]="titulo"> </label>
+    <label for="compania">Compañía: <input type="text" [(ngModel)]="compania"> </label>
+    <label for="valoracion">Valoración: <input type="number" [(ngModel)]="valoracion"> </label>
+  </div>
+
+  <div id="botones">
+    <button (click)="guardar()"> Guardar</button>
+    <button (click)="vaciar()"> Vaciar/Anular selección</button>
+    <button *ngIf="seleccionado != -1" (click)="modificar()"> Modificar</button>
+    <button *ngIf="seleccionado != -1" (click)="eliminar()"> Eliminar</button>
+  </div>
+
+</div>
+
+<div id="listaJuegos">
+
+  <div *ngFor="let juego of videojuegos; index as i" (click)="seleccionar(juego, i)" class="juegoElem">
+    <p>·{{(i + 1)}}</p>
+    <p>Título: {{juego.titulo}}</p>
+    <p>Compañía: {{juego.compania}}</p>
+    <p>Valoración: {{juego.valoracion}}</p>
+  </div>
+
+</div>

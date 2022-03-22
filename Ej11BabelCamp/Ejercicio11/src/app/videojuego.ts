@@ -1,17 +1,18 @@
 export class Videojuego{
-    private id:number;
+    private _id:number;
     private _titulo: string;
     private _compania: string;
     private _valoracion: number;
+
     constructor(id:number, titulo:string, compania:string, valoracion: number) {
-      this.id = id;
+      this._id = id;
       this._titulo = titulo;
       this._compania = compania;
       this._valoracion = valoracion;
     }
 
-    public get getId(){
-      return this.id;
+    public get id(){
+      return this._id;
     }
     public get titulo(): string {
       return this._titulo;
