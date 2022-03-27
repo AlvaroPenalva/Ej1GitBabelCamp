@@ -55,7 +55,7 @@ export class AppComponent {
   //elimina el videojuego seleccionado del array
   eliminar(){
     this.videojuegos.splice(this.seleccionado, 1);
-
+    this.seleccionado = -1;
   }
 
 }
