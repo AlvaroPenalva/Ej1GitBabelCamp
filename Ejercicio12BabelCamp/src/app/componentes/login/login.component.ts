@@ -6,6 +6,7 @@ import {
 import {
   Router
 } from '@angular/router';
+import { AppComponent } from 'src/app/app.component';
 
 @Component({
   selector: 'app-login',
@@ -41,8 +42,10 @@ export class LoginComponent implements OnInit {
 
     if (this.usuarios.has(this.usuario)) {
 
-      if (this.usuarios.get(this.usuario) == this.password)
+      if (this.usuarios.get(this.usuario) == this.password){
         this.router.navigate(['/juegos']);
+        AppComponent.loggeado = true;
+      }
 
       else {
         this.noPassword = false;
