@@ -46,5 +46,12 @@
 ### Ejercicio11BabelCamp:
   - Proyecto en angular de una app para almacenar videojuegos en un array. Se pueden modificar y eliminar. al añadirlos aparecerán en pantalla.
 
+### Ejercicio12BabelCamp:
+  - Proyecto en angular de un sitio web con listade videojuegos.
+
+### Ejercicio13BabelCamp:
+  -Proyecto Java con tres clases de empleados. La clase Empleado es abstracta y de ella heredan las demás. He aplicado también
+  javadoc para probarlo, el main realiza todo lo pedido en el ejercicio de creación de objetos y llamada a for.
+  
 ### Enunciados:
 Aquí se encuentran todos los enunciados de los ejercicios mandados.
