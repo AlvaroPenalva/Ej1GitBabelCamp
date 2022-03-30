@@ -1,0 +1,35 @@
+@media (min-width:300px) and (max-width: 700px)  {
+    #menu {
+      max-width: fit-content;
+    }
+  }
+
+@media screen and (min-width: 700px) {
+  #menu {
+    display: inline-block;
+    margin-left: 10%;
+    vertical-align: top;
+  }
+
+}
+
+#menu {
+  background-color: rgb(148, 118, 128);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+#menu>div {
+  background-color: purple;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+
+#menu>div:hover {
+  cursor: pointer;
+}

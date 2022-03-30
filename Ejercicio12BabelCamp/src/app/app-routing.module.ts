@@ -8,7 +8,7 @@ import { LoginComponent } from './componentes/login/login.component';
 const routes: Routes = [
   {path: '', component: LoginComponent},
   {path: 'bio', component: BioComponent},
-  {path: 'juegos', component: JuegosComponent},
+  {path: 'juegos/:usuario', component: JuegosComponent},
   {path: 'contacto', component: ContactoComponent}
 ];
 

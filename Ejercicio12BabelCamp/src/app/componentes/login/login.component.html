@@ -1,8 +1,10 @@
+<div>
+  <label for="usuario">Usuario: </label><input type="text" [(ngModel)]="usuario"> <span [hidden]="noUser">Usuario inexistente</span>
+  <br>
+  <label for="password">Contraseña: </label> <input type="password" [(ngModel)]="password"> <span [hidden]="noPassword">Contraseña incorrecta</span>
+  <br>
+  <button (click)="loguear()">Login</button>
 
-<label for="usuario">Usuario: </label><input type="text" [(ngModel)]="usuario">
-<br>
-<p [hidden]="noUser">Usuario inexistente</p>
-<label for="password">Contraseña: </label> <input type="password" [(ngModel)]="password">
-<br>
-<p [hidden]="noPassword">Contraseña incorrecta</p>
-<button (click)="loguear()">Enter</button>
+  <h2 *ngIf="vacio">DEBE RELLENAR LOS DOS CAMPOS</h2>
+
+</div>

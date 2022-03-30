@@ -9,6 +9,7 @@ import { BioComponent } from './componentes/bio/bio.component';
 import { JuegosComponent } from './componentes/juegos/juegos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FormsModule } from '@angular/forms';
+import { MenuComponent } from './componentes/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     BioComponent,
     JuegosComponent,
     ContactoComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,

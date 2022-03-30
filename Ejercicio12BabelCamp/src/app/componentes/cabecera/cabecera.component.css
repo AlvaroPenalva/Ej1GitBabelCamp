@@ -1,8 +1,15 @@
-ul {
-  float: right;
+h1 {
+  text-align: center;
+  display: inline-block;
 }
 
-h1 {
-  display: inline;
-  margin-top: 200px;
+img{
+  width: 100px;
+  height: 100px;
+}
+
+div{
+  align-items: center;
+  text-align: center;
+  margin-bottom: 7%;
 }

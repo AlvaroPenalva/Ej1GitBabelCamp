@@ -12,4 +12,6 @@ export class BioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  descripcion:boolean = true;
+
 }

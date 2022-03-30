@@ -3,12 +3,15 @@ export class Videojuego{
     private _titulo: string;
     private _compania: string;
     private _valoracion: number;
+    private _img: string;
+    private _mostrar: boolean = false;
 
-    constructor(id:number, titulo:string, compania:string, valoracion: number) {
+    constructor(id:number, titulo:string, compania:string, valoracion: number, img:string) {
       this._id = id;
       this._titulo = titulo;
       this._compania = compania;
       this._valoracion = valoracion;
+      this._img = img;
     }
 
     public get id(){
@@ -31,5 +34,17 @@ export class Videojuego{
     }
     public set valoracion(value: number) {
       this._valoracion = value;
+    }
+    public get img(): string {
+      return this._img;
+    }
+    public set img(value: string) {
+      this._img = value;
+    }
+    public get mostrar(): boolean {
+      return this._mostrar;
+    }
+    public set mostrar(value: boolean) {
+      this._mostrar = value;
     }
   }
