@@ -61,4 +61,12 @@ public class Coche {
 		this.kilometros = kilometros;
 	}
 	
+	@Override
+	public String toString() {
+		return "Coche:\n -ID: " + this.id + "\n -Matricula: " + this.matricula + 
+				"\n -Marca: " + this.marca + "\n -Modelo: " + this.modelo +
+				"\n -Nº kilometros: " + this.kilometros + "\n";
+		
+	}
+	
 }

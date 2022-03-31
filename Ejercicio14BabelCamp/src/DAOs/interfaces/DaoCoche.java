@@ -10,7 +10,7 @@ public interface DaoCoche {
 
 	public int delete(int id);
 
-	public int update(int id);
+	public int update(Coche coche);
 
 	public Coche read(int id);
 

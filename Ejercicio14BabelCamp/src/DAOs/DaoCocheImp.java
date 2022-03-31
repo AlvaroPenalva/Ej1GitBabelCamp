@@ -14,7 +14,7 @@ public class DaoCocheImp implements DaoCoche {
 	private Connection con;
 
 	public boolean initConnection() {
-		String url = "jdbc::mysql://localhost:3306/mia";
+		String url = "jdbc:mysql://localhost:3306/mia";
 		String user = "root";
 		String password = "";
 		try {
@@ -47,16 +47,16 @@ public class DaoCocheImp implements DaoCoche {
 
 			try {
 				PreparedStatement ps = con.prepareStatement(query);
-				ps.setString(0, coche.getMatricula());
-				ps.setString(1, coche.getMarca());
-				ps.setString(2, query);
-				ps.setDouble(3, coche.getKilometros());
+				ps.setString(1, coche.getMatricula());
+				ps.setString(2, coche.getMarca());
+				ps.setString(3, coche.getModelo());
+				ps.setDouble(4, coche.getKilometros());
 				int row = ps.executeUpdate();
 				if (row != 1) {
 					return 2;
 				}
 
-			} catch (SQLException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 				System.out.println(e.getMessage());
 				return 2;
@@ -79,12 +79,12 @@ public class DaoCocheImp implements DaoCoche {
 
 			try {
 				PreparedStatement ps = con.prepareStatement(query);
-				ps.setInt(0, id);
+				ps.setInt(1, id);
 				int row = ps.executeUpdate();
 				if (row != 1) {
-					return 2;
+					return 3;
 				}
-			} catch (SQLException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 				System.out.println(e.getMessage());
 				return 2;
@@ -98,18 +98,22 @@ public class DaoCocheImp implements DaoCoche {
 
 	}
 
-	public int update(int id) {
+	public int update(Coche coche) {
 		String query = "update coches set matricula = ?, marca = ?, modelo = ?, kilometros = ? where id = ?";
 
 		if (initConnection()) {
 			try {
 				PreparedStatement ps = con.prepareStatement(query);
-				ps.setInt(0, id);
+				ps.setString(1, coche.getMatricula());
+				ps.setString(2, coche.getMarca());
+				ps.setString(3, coche.getModelo());
+				ps.setDouble(4, coche.getKilometros());
+				ps.setInt(5, coche.getId());
 				int row = ps.executeUpdate();
 				if (row != 1) {
-					return 2;
+					return 3;
 				}
-			} catch (SQLException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 				System.out.println(e.getMessage());
 			}
@@ -128,14 +132,14 @@ public class DaoCocheImp implements DaoCoche {
 			Coche coche = null;
 			try {
 				PreparedStatement ps = con.prepareStatement(query);
-				ps.setInt(0, id);
+				ps.setInt(1, id);
 				ResultSet rs = ps.executeQuery();
 				while (rs.next()) {
-					coche = new Coche(rs.getString(1), rs.getString(2), rs.getString(3), rs.getDouble(4));
-					coche.setId(rs.getInt(0));
+					coche = new Coche(rs.getString(2), rs.getString(3), rs.getString(4), rs.getDouble(5));
+					coche.setId(rs.getInt(1));
 				}
 
-			} catch (SQLException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 				System.out.println(e.getMessage());
 				return null;
@@ -148,18 +152,18 @@ public class DaoCocheImp implements DaoCoche {
 
 	public Coche readMat(String matricula) {
 		if (initConnection()) {
-			String query = "select from coches where matricula = ?";
+			String query = "select * from coches where matricula LIKE ?";
 			Coche coche = null;
 			try {
 				PreparedStatement ps = con.prepareStatement(query);
-				ps.setString(0, matricula);
+				ps.setString(1, matricula);
 				ResultSet rs = ps.executeQuery();
 				while (rs.next()) {
-					coche = new Coche(rs.getString(1), rs.getString(2), rs.getString(3), rs.getDouble(4));
-					coche.setId(rs.getInt(0));
+					coche = new Coche(rs.getString(2), rs.getString(3), rs.getString(4), rs.getDouble(5));
+					coche.setId(rs.getInt(1));
 				}
 
-			} catch (SQLException e) {
+			} catch (Exception  e) {
 				e.printStackTrace();
 				System.out.println(e.getMessage());
 				return null;
@@ -172,20 +176,20 @@ public class DaoCocheImp implements DaoCoche {
 
 	public List<Coche> readMarca(String marca) {
 		if (initConnection()) {
-			String query = "Select * from coches where marca = ?";
+			String query = "Select * from coches where marca LIKE ?";
 			Coche coche = null;
 			List<Coche> lista = new ArrayList<Coche>();
 			try {
 				PreparedStatement ps = con.prepareStatement(query);
-				ps.setString(0, marca);
+				ps.setString(1, marca);
 				ResultSet rs = ps.executeQuery();
 				while (rs.next()) {
-					coche = new Coche(rs.getString(1), rs.getString(2), rs.getString(3), rs.getDouble(4));
-					coche.setId(rs.getInt(0));
+					coche = new Coche(rs.getString(2), rs.getString(3), rs.getString(4), rs.getDouble(5));
+					coche.setId(rs.getInt(1));
 					lista.add(coche);
 				}
 
-			} catch (SQLException e) {
+			} catch (Exception  e) {
 				e.printStackTrace();
 				System.out.println(e.getMessage());
 				return null;
@@ -198,20 +202,20 @@ public class DaoCocheImp implements DaoCoche {
 
 	public List<Coche> readModelo(String modelo) {
 		if (initConnection()) {
-			String query = "select * from coches where modelo = ?";
+			String query = "select * from coches where modelo LIKE ?";
 			Coche coche = null;
 			List<Coche> lista = new ArrayList<Coche>();
 			try {
 				PreparedStatement ps = con.prepareStatement(query);
-				ps.setString(0, modelo);
+				ps.setString(1, modelo);
 				ResultSet rs = ps.executeQuery();
 				while (rs.next()) {
-					coche = new Coche(rs.getString(1), rs.getString(2), rs.getString(3), rs.getDouble(4));
-					coche.setId(rs.getInt(0));
+					coche = new Coche(rs.getString(2), rs.getString(3), rs.getString(4), rs.getDouble(5));
+					coche.setId(rs.getInt(1));
 					lista.add(coche);
 				}
 
-			} catch (SQLException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 				System.out.println(e.getMessage());
 				return null;
@@ -231,12 +235,12 @@ public class DaoCocheImp implements DaoCoche {
 				PreparedStatement ps = con.prepareStatement(query);
 				ResultSet rs = ps.executeQuery();
 				while (rs.next()) {
-					coche = new Coche(rs.getString(1), rs.getString(2), rs.getString(3), rs.getDouble(4));
-					coche.setId(rs.getInt(0));
+					coche = new Coche(rs.getString(2), rs.getString(3), rs.getString(4), rs.getDouble(5));
+					coche.setId(rs.getInt(1));
 					lista.add(coche);
 				}
 
-			} catch (SQLException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 				System.out.println(e.getMessage());
 				return null;
