@@ -20,6 +20,8 @@ public class Main {
 		HiloEsPrimo primo3 = new HiloEsPrimo(num);
 		primo3.start();
 		
+		scan.close();
+		
 	}
 
 }
