@@ -44,5 +44,10 @@ public abstract class Persona {
 	protected abstract double defensa();
 	
 	protected abstract void presentar();
+	
+	@Override
+	public String toString() {
+		return "NOMBRE: " + this.nombre + " VIDA: " + this.vida;
+	}
 
 }

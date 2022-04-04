@@ -30,11 +30,13 @@ public class Main {
 		double danio = 0;
 		int i = 1;
 		while (uno.vivo && dos.vivo) {
-			System.out.println("Turno: " + i + "\n");
+			System.out.println("-----------------\nTurno: " + i + "\n---------------------");
 			danio = uno.atacar();
 			dos.encajarGolpe(danio);
 			danio = dos.atacar();
 			uno.encajarGolpe(danio);
+			System.out.println(uno);
+			System.out.println(dos);
 			i++;
 		}
 		if (!uno.vivo && !dos.vivo)
