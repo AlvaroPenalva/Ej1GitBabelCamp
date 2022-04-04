@@ -10,7 +10,7 @@ public class BarraDePan extends Arma {
 
 	@Override
 	public String presentar() {
-		return "la barra de pan dura!";
+		return "la barra de pan dura!\n";
 	}
 
 	@Override

@@ -10,7 +10,7 @@ public class Hacha extends Arma {
 
 	@Override
 	public String presentar() {
-		return "el Hacha!";
+		return "el Hacha!\n";
 	}
 
 	@Override

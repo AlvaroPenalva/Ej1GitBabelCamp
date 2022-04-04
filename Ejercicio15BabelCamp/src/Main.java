@@ -28,11 +28,14 @@ public class Main {
 
 	public static void combate(Persona uno, Persona dos) {
 		double danio = 0;
+		int i = 1;
 		while (uno.vivo && dos.vivo) {
+			System.out.println("Turno: " + i + "\n");
 			danio = uno.atacar();
 			dos.encajarGolpe(danio);
 			danio = dos.atacar();
 			uno.encajarGolpe(danio);
+			i++;
 		}
 		if (!uno.vivo && !dos.vivo)
 			System.out.println("Tenemos un empate.\n");

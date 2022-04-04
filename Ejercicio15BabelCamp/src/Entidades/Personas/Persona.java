@@ -12,6 +12,7 @@ public abstract class Persona {
 		this.vida = 15;
 		this.vivo = true;
 		this.atributos = atributos;
+		this.presentar();
 	}
 
 	public String getNombre() {
@@ -41,5 +42,7 @@ public abstract class Persona {
 	protected abstract double danio();
 
 	protected abstract double defensa();
+	
+	protected abstract void presentar();
 
 }

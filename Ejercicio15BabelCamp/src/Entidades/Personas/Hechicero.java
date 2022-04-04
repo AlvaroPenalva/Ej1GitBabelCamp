@@ -13,7 +13,7 @@ public class Hechicero extends Persona {
 
 		super(nombre, new Atributos(0, 10, 2, 5, 2));
 		this.arma = Armero.getArma();
-		System.out.println("Entra en la arena el hechicero " + nombre + " con su arma... " + this.arma.presentar());
+		System.out.println(this.arma.presentar());
 		this.mana = 5;
 	}
 
@@ -42,5 +42,10 @@ public class Hechicero extends Persona {
 		System.out.println("Lanza un hechizo\n");
 		this.mana -= 1;
 		return 5 + atributos.getInteligencia() / 10;
+	}
+
+	@Override
+	protected void presentar() {
+		System.out.println("Entra en la arena el hechicero " + nombre + " con su arma... ");
 	}
 }

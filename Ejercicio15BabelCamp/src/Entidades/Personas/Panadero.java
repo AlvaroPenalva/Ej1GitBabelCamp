@@ -8,8 +8,8 @@ public class Panadero extends Persona {
 
 	public Panadero() {
 		super("Felix", new Atributos(0, 0, 0, 0, 999));
-		System.out.println("Estoy muy mayor para estas cosas pero si hace falta combatire con... ");
 		arma = new BarraDePan();
+		System.out.println(this.arma.presentar());
 	}
 
 	@Override
@@ -22,6 +22,11 @@ public class Panadero extends Persona {
 	protected double defensa() {
 		System.out.println("¡Un espectador salta a defender al panadero!\n");
 		return 999;
+	}
+
+	@Override
+	protected void presentar() {
+		System.out.println("Estoy muy mayor para estas cosas pero si hace falta combatire con... ");
 	}
 
 }

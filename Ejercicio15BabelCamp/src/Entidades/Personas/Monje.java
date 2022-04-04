@@ -11,7 +11,7 @@ public class Monje extends Persona {
 	public Monje(String nombre) {
 		super(nombre, new Atributos(5, 2, 0, 10, 3));
 		this.arma = Armero.getArma();
-		System.out.println("Entra en la arena el monje " + nombre + " con su arma... " + this.arma.presentar());
+		System.out.println(this.arma.presentar());
 	}
 
 	@Override
@@ -38,5 +38,11 @@ public class Monje extends Persona {
 		double vidaCurada = (atributos.getFe() / 3);
 		System.out.println("¡El monje se cura " + vidaCurada + " de vida!\n");
 		vida += vidaCurada;
+	}
+
+	@Override
+	protected void presentar() {
+		System.out.println("Entra en la arena el monje " + nombre + " con su arma... ");
+
 	}
 }
