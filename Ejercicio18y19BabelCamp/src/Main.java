@@ -10,6 +10,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		//Ejercicio 18
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Introduzca tres numeros para saber si son primos");
 		Runnable i1 = () -> {
@@ -69,6 +70,31 @@ public class Main {
 		th1.run();
 		th2.run();
 		th3.run();
+		try {
+			th3.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		//Ejercicio 19
+		Operar sumar = (num1, num2)->{return num1 + num2;};
+		Operar restar = (num1, num2)->{return num1 - num2;};
+		Operar multiplicar = (num1, num2)->{return num1 * num2;};
+		Operar dividir = (num1, num2)->{return num1 / num2;};
+		Operar potencia = (num1, num2)->{return Math.pow(num1, num2);};
+		
+		double a;
+		int b;
+		System.out.println("Introduzca dos numeros para realizar operaciones:\n");
+		a = scan.nextDouble();
+		b = scan.nextInt();
+		System.out.println("La suma es: " + sumar.operacion(a, b));
+		System.out.println("La resta es: " + restar.operacion(a, b));
+		System.out.println("La multiplicacion es: " + multiplicar.operacion(a, b));
+		System.out.println("La division es: " + dividir.operacion(a, b));
+		System.out.println("La potencia es: " + potencia.operacion(a, b));
+
 	}
 
 }
