@@ -11,7 +11,6 @@ public class Monje extends Persona {
 	public Monje(String nombre) {
 		super(nombre, new Atributos(5, 2, 0, 10, 3));
 		this.arma = Armero.getArma();
-		System.out.println(this.arma.presentar());
 	}
 
 	@Override
@@ -41,8 +40,8 @@ public class Monje extends Persona {
 	}
 
 	@Override
-	protected void presentar() {
-		System.out.println("Entra en la arena el monje " + nombre + " con su arma... ");
+	public void presentar() {
+		System.out.println("Entra en la fortaleza el monje " + nombre + " con su arma... " + arma.presentar());
 
 	}
 }

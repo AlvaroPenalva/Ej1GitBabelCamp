@@ -10,7 +10,6 @@ public class Caballero extends Persona {
 	public Caballero(String nombre) {
 		super(nombre, new Atributos(5, 0, 10, 2, 1));
 		this.arma = Armero.getArma();
-		System.out.println(this.arma.presentar());
 	}
 
 	@Override
@@ -40,7 +39,7 @@ public class Caballero extends Persona {
 	}
 
 	@Override
-	protected void presentar() {
-		System.out.println("Entra en la arena el caballero " + nombre + " con su arma... ");
+	public void presentar() {
+		System.out.println("Entra en la fortaleza el caballero " + nombre + " con su arma... " + arma.presentar());
 	}
 }

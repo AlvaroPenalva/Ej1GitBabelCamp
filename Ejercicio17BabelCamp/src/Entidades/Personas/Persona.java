@@ -1,6 +1,8 @@
 package Entidades.Personas;
 
-public abstract class Persona {
+import Estructuras.Fortaleza;
+
+public abstract class Persona extends Thread{
 
 	protected double vida;
 	protected String nombre;
@@ -12,7 +14,11 @@ public abstract class Persona {
 		this.vida = 15;
 		this.vivo = true;
 		this.atributos = atributos;
-		this.presentar();
+	}
+	
+	@Override
+	public void run() {
+		Fortaleza.getFortaleza().entraryLuchar(this);
 	}
 
 	public String getNombre() {
@@ -43,7 +49,7 @@ public abstract class Persona {
 
 	protected abstract double defensa();
 	
-	protected abstract void presentar();
+	public abstract void presentar();
 	
 	@Override
 	public String toString() {

@@ -10,7 +10,6 @@ public class Guerrero extends Persona {
 	public Guerrero(String nombre) {
 		super(nombre, new Atributos(10, 2, 5, 0, 1));
 		this.arma = Armero.getArma();
-		System.out.println(this.arma.presentar());
 	}
 
 	@Override
@@ -32,8 +31,8 @@ public class Guerrero extends Persona {
 	}
 
 	@Override
-	protected void presentar() {
-		System.out.println("Entra en la arena el guerrero " + nombre + " con su arma... ");
+	public void presentar() {
+		System.out.println("Entra en la fortaleza el guerrero " + nombre + " con su arma... " + arma.presentar());
 	}
 
 }
