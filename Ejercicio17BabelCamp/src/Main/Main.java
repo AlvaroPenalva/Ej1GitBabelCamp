@@ -1,12 +1,14 @@
+package Main;
+
 import Estructuras.Fortaleza;
 import Estructuras.Vestuario;
 
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		System.out.println("¡Los combatientes estan asaltando la fortaleza!\n");
-		
+
 		Thread com1 = Vestuario.getGuerrero("Combatiente1");
 		Thread com2 = Vestuario.getGuerrero("Combatiente2");
 		Thread com3 = Vestuario.getGuerrero("Combatiente3");
@@ -27,12 +29,13 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		Fortaleza fortaleza = Fortaleza.getFortaleza();
-		
-		if(fortaleza.isJefeMuerto())
+
+		if (fortaleza.isJefeMuerto()) {
 			System.out.println("El heroe " + fortaleza.getHeroe().getNombre() + " ha matado al jefe!!!!\n");
-		
+			System.out.println("La gente aplaude y vitorea al heroe");
+		}
 	}
 
 }

@@ -27,8 +27,8 @@ public class Jefe {
 		if (daniofinal < 0)
 			daniofinal = 0;
 		vida -= daniofinal;
-		System.out.println("Malenia: ¡Eso no es nada!\n");
-		System.out.println("Malenia recibe: " + daniofinal + " de danio.\n");
+		System.out.println(nombre + ": ¡Eso no es nada!\n");
+		System.out.println(nombre + " recibe: " + daniofinal + " de danio.\n");
 		if (this.vida <= 0)
 			vivo = false;
 	}
@@ -39,6 +39,6 @@ public class Jefe {
 
 	public void muerte() {
 		this.vivo = false;
-		System.out.println("No es posible, nunca fui derrotada.\n");
+		System.out.println(nombre + ": No es posible, nunca fui derrotada.\n");
 	}
 }
