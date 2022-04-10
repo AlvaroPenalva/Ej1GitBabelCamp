@@ -50,8 +50,29 @@
   - Proyecto en angular de un sitio web con listade videojuegos.
 
 ### Ejercicio13BabelCamp:
-  -Proyecto Java con tres clases de empleados. La clase Empleado es abstracta y de ella heredan las demás. He aplicado también
+  - Proyecto Java con tres clases de empleados. La clase Empleado es abstracta y de ella heredan las demás. He aplicado también
   javadoc para probarlo, el main realiza todo lo pedido en el ejercicio de creación de objetos y llamada a for.
   
+### Ejercicio14BabelCamp
+  - Proyecto java de gestión de coches. EL número de caracteres de la matricula y que los kilometros no sean negativos se gestiona desde negocio pero que no se repita   la matrícula se gestiona desde la BBDD.
+
+### Ejercicio15BabelCamp
+  - Ejercicio de implementación del juego de combates. He añadido que los personajes estén especializados en un arma y puedan hacer críticos. Los curanderos en mi caso   los he llamado monjes. Todos los personajes tienen un daño fijo durante el combate. Pero este dependerá de los atributos que tengan y el arma que utilicen. Los         atributos ahora mismo son fijos. Las armas que reciban son aleatorias, desde un hacha pasando por un rosario hasta una barra de pan dura. Existe un evento aleaatorio   que ocurre en el 6% de los casos que es que el panadero caiga a la arena, este combatirá y es imposible que pierda.
+
+### Ejercicio16BabelCamp.
+  - Ejercicio de los primos, está implementado de manera normal. los hilos se ejecutan de forma paralela, está probado poniendo un número más alto al primer hilo para    ver si termina después que el resto.
+
+### Ejercicio17BabelCamp.
+  - Ejercicio de entrar en la fortaleza. Para evitar problemas con la creación del objeto Fortaleza he hecho que este sea un Singleton. Por eso el método getFortaleza    también es synchronized, para evitar el acceso de todos los hilos simultáneamente.
+
+### Ejercicio18BabelCamp.
+  - Al no poder pasarle por parámetro el número he hecho que cada hilo pida por terminal el número para realizar el cálculo del primo. Al final del ejercicio he hecho    join para escribir el ejerciciop 19 ya que no me ha parecido necesaria la creación de un nuevo proyecto sólo para eso.
+
+### Ejercicio19BabelCamp.
+  - Generada la interfaz operación con el método operar.
+
+### Ejercicio20BabelCamp.
+  - Añadido metodo de generación de fichero json con los coches de la bbdd y de generación de fichero excel con los coches de la bbdd. En el ejecutable no se guardan bien estos ficheros porque hay que cambiar las rutas.
+  - 
 ### Enunciados:
 Aquí se encuentran todos los enunciados de los ejercicios mandados.
