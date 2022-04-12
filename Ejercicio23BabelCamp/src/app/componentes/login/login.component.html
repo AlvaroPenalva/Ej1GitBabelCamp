@@ -1,0 +1,10 @@
+<div>
+  <label for="usuario">Usuario: </label><input type="text" [(ngModel)]="usuario"> <span [hidden]="fail">Datos incorrectos</span>
+  <br>
+  <label for="password">Contraseña: </label> <input type="password" [(ngModel)]="password">
+  <br>
+  <button (click)="loguear()">Login</button>
+
+  <h2 *ngIf="vacio">DEBE RELLENAR LOS DOS CAMPOS</h2>
+
+</div>

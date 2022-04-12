@@ -1,0 +1,37 @@
+
+h2{
+    margin-bottom: 7%;
+}
+
+
+.listaJuegos{
+    margin-left: 10%;
+    display:inline-block;
+    justify-content: center;
+}
+
+.juego{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 6%;
+    width: fit-content;
+    margin-bottom: 20%;
+}
+
+.juego > div{
+    margin-left: 10%;
+}
+
+.flecha{
+    margin-left: 10%;
+    vertical-align: middle;
+}
+.flecha:hover{
+    cursor: grab;
+}
+
+p{
+    min-width: 100%;
+}

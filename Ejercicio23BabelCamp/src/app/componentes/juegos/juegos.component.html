@@ -1,0 +1,26 @@
+
+<div class="listaJuegos">
+
+  <h2>{{nombre}}</h2>
+
+  <div *ngFor="let juego of listaJuegos; index as i" class="juego">
+
+    <img [src]="juego.img" alt="imagen" height="70px" width="50px">
+    <div>
+      <p>{{juego.id}}.</p>
+      <p>Título: {{juego.titulo}}</p>
+    </div>
+    <div *ngIf="juego.mostrar">
+      <p>Compañía: {{juego.compania}}</p>
+      <p>Valoración: {{juego.valoracion}}</p>
+    </div>
+
+    <img class="flecha" *ngIf="juego.mostrar" src="/assets/flechas-izq.png" height="20px" width="30px" alt="contraer"
+      (click)="change(juego)">
+    <img class="flecha" *ngIf="!juego.mostrar" src="/assets/flechas-der.png" height="20px" width="30px" alt="expandir"
+      (click)="change(juego)">
+
+  </div>
+</div>
+
+<app-menu [juegos]="juegos"></app-menu>

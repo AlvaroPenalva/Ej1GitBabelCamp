@@ -1,0 +1,22 @@
+@media screen and (min-width:700px) {
+    #contacto{
+        margin-left: 40%;
+    }
+}
+@media screen and (min-width:500px) and (max-width:700px) {
+    #contacto{
+        margin-left: 10%;
+    }
+}
+#contacto{
+    display: inline-block;
+    
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 3%;
+    min-width: fit-content;
+}
+
+p{
+    margin-top: 2%;
+}
